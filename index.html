@@ -1,19 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation Bar -->
-    <nav class="nav__logo">Bobs Burgers <span></span>
-        <div>
-            <a href="" class="nav__link" >Home</a>
-            <a href="" class="nav__link" >About Us</a>
-            <a href="" class="nav__link" >Menu</a>
-            <a href="" class="nav__link" ><button class="nav__link">Contact</button></a>
+    <nav class="nav__logo">
+      Bobs Burgers <span></span>
+      <div>
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About Us</a>
+        <a href="menu" class="nav__link">Menu</a>
+        <a href="contact" class="nav__link"
+          ><button class="nav__link">Contact</button></a
+        >
+      </div>
+    </nav>
+    <!-- Header -->
+    <header id="home">
+      <h1 class="home__title">Bobs Burgers</h1>
+      <p class="home__paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+        omnis praesentium aspernatur commodi accusantium laudantium repellat ab
+        aperiam, dolor quia.
+      </p>
+      <button class="home__button">Contact Us</button>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <section id="about">
+        <img class="about__image" src="assets/about-image.png" alt="" />
+        <div class="about__wrapper">
+          <h2 class="about__title">About Us</h2>
+          <p class="about__paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+            nesciunt numquam ipsum earum sit molestias minima, dolor cupiditate
+            unde? Repellendus odio facere aperiam culpa laudantium nemo
+            nesciunt, tempore eligendi est.
+          </p>
+          <button class="about__button">Learn More</button>
         </div>
-    </nav>  
-</body>
+      </section>
+
+      <section id="menu">
+        <div class="menu__wrapper">
+          <h2 class="menu__title">Menu</h2>
+          <p class="menu__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum,
+            asperiores perferendis sunt beatae enim facere nam debitis.
+            Consectetur ipsum dignissimos temporibus aliquam aperiam molestiae
+            nemo, officiis necessitatibus ipsa, recusandae reiciendis.
+          </p>
+          <button class="menu__button">Learn More</button>
+          <img class="menu__image" src="assets/menu-image.png" alt="" />
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="contact__title">Contact</h2>
+        <form class="contact__form">
+          <label for="">Name</label>
+          <input type="text" class="contact__form__input" />
+          <label for="">Email</label>
+          <input type="email" class="contact__form__input" />
+          <label for="">Message</label>
+          <textarea class="contact__form__textarea"></textarea>
+          <button class="Contact__form__button">Send</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer  -->
+    <footer>
+      <a href="#home" class="footer__link">Home</a>
+      <a href="#about" class="footer__link">About</a>
+      <a href="#menu" class="footer__link">Menu</a>
+      <a href="#contact" class="footer__link">Contact</a>
+    </footer>
+  </body> 
 </html>
